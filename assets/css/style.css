@@ -91,6 +91,10 @@ button:hover {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 .body {
   margin: 0 auto;
   width: 70vw;
