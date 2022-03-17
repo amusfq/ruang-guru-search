@@ -13,28 +13,57 @@
       rel="stylesheet"
     />
     <!-- Style -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- Header -->
-    <div class="search-container w-full">
-      <div class="search-box">
+    <div class="sticky top-0 bg-white z-10 border-b">
+      <div class="px-8 py-3 flex flex-row items-center justify-between">
         <!-- Logo -->
-        <h1>Google</h1>
-        <!-- Search Form -->
         <div>
-          <input type="text" name="q" placeholder="Search" />
-          <button type="submit">Search</button>
+          <img
+            src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+            alt=""
+            class="h-8"
+          />
+        </div>
+        <!-- Search Form -->
+        <div class="flex flex-row items-center space-x-2 relative w-2/3">
+          <input
+            class="outline-none px-4 py-2 w-full rounded-full border shadow"
+            type="text"
+            name="q"
+            placeholder="Search"
+          />
+          <button
+            type="submit"
+            class="absolute right-4 text-blue-600 hover:text-blue-800 hover:bg-transparent"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
         </div>
         <!-- Image User -->
-        <div class="flex flex-row items-center">
+        <div class="hidden md:flex flex-row items-center space-x-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 mr-1"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth="{2}"
+            strokeWidth="2"
           >
             <path
               strokeLinecap="round"
@@ -53,7 +82,7 @@
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            strokeWidth="{2}"
+            strokeWidth="2"
           >
             <path
               strokeLinecap="round"
@@ -65,66 +94,144 @@
       </div>
     </div>
     <!-- Body -->
-    <div class="body">
-      <div class="search-count">
-        <p>About 11,790,000,000 results (0.46 seconds)</p>
+    <div class="flex flex-row space-x-4 w-full md:w-5/6 mx-auto">
+      <div class="w-full md:w-4/6 mx-auto px-8">
+        <div class="py-2 text-gray-400">
+          <p>About 11,790,000,000 results (0.46 seconds)</p>
+        </div>
+        <div class="py-4 space-y-8">
+          <!-- First -->
+          <div class="space-y-2">
+            <div class="flex flex-row items-center space-x-4">
+              <a class="text-sm" href="https://google.com"
+                >https://google.com</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                />
+              </svg>
+            </div>
+            <h1 class="text-xl text-blue-700">
+              <a href="https://google.com">Google</a>
+            </h1>
+            <p>
+              Search the world's information, including webpages, images, videos
+              and more. Google has many special features to help you find
+              exactly what you're looking ...
+            </p>
+            <div class="grid grid-cols-2 gap-8">
+              <div>
+                <h1 class="text-xl text-blue-700">My Activity</h1>
+                <p>
+                  Welcome to My Activity. Data helps make Google services more
+                  ...
+                </p>
+              </div>
+              <div>
+                <h1 class="text-xl text-blue-700">Translate</h1>
+                <p>
+                  Google's free service instantly translates words, phrases, and
+                  ...
+                </p>
+              </div>
+              <div>
+                <h1 class="text-xl text-blue-700">
+                  To continue to Google Drive
+                </h1>
+                <p>
+                  Sign in. to continue to Google Drive. Email or phone. Forgot
+                  ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Second -->
+          <div class="space-y-2">
+            <div class="flex flex-row items-center space-x-4">
+              <a class="text-sm" href="https://www.google.co.id/"
+                >https://www.google.co.id/</a
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z"
+                />
+              </svg>
+            </div>
+            <h1 class="text-xl text-blue-700">
+              <a href="https://www.google.co.id/">Google</a>
+            </h1>
+            <p>
+              Search the world's information, including webpages, images, videos
+              and more. Google has many special features to help you find
+              exactly what you're looking ...
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="search-result">
-        <div class="result-box">
-          <a href="https://google.com">https://google.com</a>
-          <h1><a href="https://google.com">Google</a></h1>
-          <p>
-            Search the world's information, including webpages, images, videos
-            and more. Google has many special features to help you find exactly
-            what you're looking ...
-          </p>
-        </div>
-        <div class="result-box">
-          <a href="https://blog.google.com">https://blog.google.com</a>
-          <h1><a href="https://blog.google.com">The Keyword | Google</a></h1>
-          <p>
-            Discover all the latest about our products, technology, and Google
-            culture on our official blog.
-          </p>
-        </div>
-        <div class="result-box">
-          <a href="https://en.wikipedia.org">https://en.wikipedia.org</a>
-          <h1><a href="https://en.wikipedia.org">Google - Wikipedia</a></h1>
-          <p>
-            Google LLC is an American multinational technology company that
-            specializes in Internet-related services and products, which include
-            a search engine, ...
-          </p>
-        </div>
-        <div class="result-box">
-          <a href="https://about.google.com">https://about.google.com</a>
-          <h1>
-            <a href="https://about.google.com"
-              >Google - About Google, Our Culture & Company News</a
+      <div class="hidden md:block md:w-2/6 mt-12">
+        <div class="rounded-lg border divide-y">
+          <div class="px-4 py-8">
+            <div class="flex flex-row items-center space-x-4 justify-between">
+              <div>
+                <p class="text-3xl font-medium">Google</p>
+                <p class="text-gray-500">Technology Company</p>
+              </div>
+              <div>
+                <img
+                  src="data:image/png;base64,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"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="px-4 py-2 flex flex-row space-x-2 items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
             >
-          </h1>
-          <p>
-            Stay up to date with Google company news and products. Discover
-            stories about our culture, philosophy, and how Google technology is
-            impacting others.
-          </p>
-        </div>
-        <div class="result-box">
-          <a href="https://linkedin.com/in/google"
-            >https://linkedin.com/in/google</a
-          >
-          <h1>
-            <a href="https://linkedin.com/in/google">Google | LinkedIn</a>
-          </h1>
-          <p>
-            Check out our career opportunities at careers.google.com. Website:
-            https://goo.gle/3m1IN7m. Industries: Internet Publishing. Company
-            size: 10,001 ...
-          </p>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <p>Google.com</p>
+          </div>
+          <div class="px-4 py-2">
+            <p>
+              Google LLC is an American multinational technology company that
+              specializes in Internet-related services and products, which
+              include a search engine, online advertising technologies, cloud
+              computing, software, and hardware. Wikipedia
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <!-- Script -->
-    <script src="./assets/js/script.js" type="text/javascript"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
   </body>
 </html>
